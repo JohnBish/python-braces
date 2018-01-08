@@ -21,8 +21,9 @@ class Braces:
                     pass
                 try:
                     closeBrace = cleanLie.index("}")
+                    tmp.write(prespace + cleanLie[:closeBrace] + "\n")
                     prespace = prespace[:-5]
-                    cleanLie = cleanLie[:closeBrace] + cleanLie[closeBrace + 1:]
+                    cleanLie = cleanLie[closeBrace + 1:]
                 except ValueError:
                     pass
                 tmp.write(prespace + cleanLie + "\n")
