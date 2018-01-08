@@ -15,14 +15,14 @@ class Braces:
                 try:
                     openBrace = cleanLie.index("{")
                     tmp.write(prespace + cleanLie[:openBrace] + ":\n")
-                    cleanLie = cleanLie[openBrace:]
+                    cleanLie = cleanLie[openBrace + 1:]
                     prespace = prespace + "    "
                 except ValueError:
                     pass
                 try:
                     closeBrace = cleanLie.index("}")
                     prespace = prespace[:-5]
-                    cleanLie = cleanLie[:closeBrace] + cleanLie[closeBrace:]
+                    cleanLie = cleanLie[:closeBrace] + cleanLie[closeBrace + 1:]
                 except ValueError:
                     pass
                 tmp.write(prespace + cleanLie + "\n")
