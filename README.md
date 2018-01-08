@@ -1,7 +1,7 @@
 # python-braces
 Braces in python!
 
-##Usage:
+## Usage:
 '''
 def hello_world() {
 	print("Hello World!")
@@ -10,8 +10,8 @@ def hello_world() {
 hello_world()
 '''
 
-##Execution:
-###Windows:
+## Execution:
+### Windows:
 '''python python-braces.py target-file.py'''
-###Linux:
+### Linux:
 '''python3 python-braces.py target-file.py'''
