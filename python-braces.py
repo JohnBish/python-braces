@@ -21,11 +21,17 @@ class Braces:
                     pass
                 try:
                     closeBrace = cleanLie.index("}")
-                    tmp.write(prespace + cleanLie[:closeBrace] + "\n")
-                    prespace = prespace[:-5]
-                    cleanLie = cleanLie[closeBrace + 1:]
+                    if cleanLie[closeBrace + 1] == ";":
+                        tmp.write(prespace + cleanLie[:closeBrace] + "\n")
+                        prespace = prespace[:-5]
+                        cleanLie = cleanLie[closeBrace + 2:]
+                    else:
+                        tmp.write(prespace + cleanLie[:closeBrace] + "\n")
+                        prespace = prespace[:-5]
+                        cleanLie = cleanLie[closeBrace + 1:]
                 except ValueError:
                     pass
+                cleanLie = cleanLie.lstrip()
                 tmp.write(prespace + cleanLie + "\n")
         exec(open(converted.name).read())
             
