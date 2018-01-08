@@ -1,6 +1,6 @@
 # python-braces
-![picture](python-braces.jpg)
 Braces in python!
+![picture](python-braces.jpg)
 
 ## Usage:
 ```python
