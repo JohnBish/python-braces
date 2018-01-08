@@ -1,4 +1,5 @@
 # python-braces
+![picture](python-braces.jpg)
 Braces in python!
 
 ## Usage:
