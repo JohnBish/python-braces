@@ -14,6 +14,10 @@ Or, if you want to destroy everything the python developers have built and make 
 ```python
 def hello_world(){print("Hello World!")};hello_world()
 ```
+But why stop there?
+```python
+class Hello{def hello_world(self){print("Hello World!")}};Hello().hello_world()
+```
 
 ## Execution:
 ### Windows:
